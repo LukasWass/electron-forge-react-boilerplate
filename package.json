@@ -22,6 +22,13 @@
         "name": "Lukas Wass",
         "email": "dev@lukaswass.se"
     },
+    "contributors": [
+        {
+            "name": "Albin Axtelius",
+            "email": "albin@axtelius.se",
+            "url": "https://github.com/albinaxtelius"
+        }
+    ],
     "config": {
         "forge": {
             "packagerConfig": {},
@@ -56,8 +63,8 @@
                         "renderer": {
                             "config": "./webpack.renderer.config.js",
                             "entryPoints": [{
-                                "html": "./src/index.html",
-                                "js": "./src/Renderer.tsx",
+                                "html": "./src/renderer/index.html",
+                                "js": "./src/renderer/index.tsx",
                                 "name": "main_window"
                             }]
                         }
