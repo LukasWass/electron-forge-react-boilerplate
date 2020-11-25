@@ -7,14 +7,14 @@ const TestIPCRenderer = () => {
     ipcRenderer.send("AppCallingMainEvent", "This is an event");
 }
 
-const CreateEventListners = () => {
+const CreateEventListeners = () => {
     ipcRenderer.on("MainCallingAppEvent", (event: any, data: any) => {
         console.log(`MainCallingAppEvent data: ${data}`);
     });
 }
 
 const App = () => {
-    CreateEventListners();
+    CreateEventListeners();
 
     return (
         <div>
